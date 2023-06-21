@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Komórki</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Komórki - Automat Komórkowy</h1>
+        <p>
+            Gra komórkowa to prosty automat komórkowy, w którym każda komórka może być żywa (czarna) lub martwa (biała).
+            Stan kolejnej generacji komórek zależy od stanu ich sąsiadów.
+        </p>
+        <p>
+            Dla każdej komórki sprawdzane są sąsiednie komórki w otoczeniu 8-punktowym (góra, dół, lewo, prawo oraz
+            cztery przekątne). Zasady:
+        </p>
+        <ul>
+            <li>
+                Jeśli martwa komórka ma dokładnie trzech sąsiadujące żywe komórki, to w kolejnej generacji staje się
+                żywa.
+            </li>
+            <li>
+                Jeśli żywa komórka ma mniej niż dwie lub więcej niż trzy sąsiadujące żywe komórki, to w kolejnej
+                generacji umiera.
+            </li>
+            <li>
+                Jeśli żywa komórka ma dwie lub trzy sąsiadujące żywe komórki, to w kolejnej generacji pozostaje żywa.
+            </li>
+        </ul>
+        <p>Autor: Uladzislau Akulau 19172</p>
+        <div id="grid"></div>
+        <div class="buttons">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+            <button id="clearBtn">Wyczyść</button>
+        </div>
+        <div id="counter">Żywe komórki: 0</div>
+    </div>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>
